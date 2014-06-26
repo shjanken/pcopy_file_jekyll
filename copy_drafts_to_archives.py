@@ -44,4 +44,4 @@ for o,a in opts :
             print ctime
             ## move file to _posts
             new_file = '%s/_posts/%s-%s-%s-%s' % (a,ctime[0],ctime[1],ctime[2], splitext_file[0].split('/')[-1])
-            #shutil.move(draft_name,new_file)
+            shutil.move(draft_name,new_file)
